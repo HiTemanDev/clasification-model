@@ -3,6 +3,8 @@ This model created by :
 1. Sidqi Amanullah – Universitas Pendidikan Indonesia
 2. Hanna Febriani Sutarman – Universitas Ahmad Dahlan
 
+Notebook : https://colab.research.google.com/drive/1FbIpoUdA_86gWZkfFWT6dW8Bws6O2bZV?usp=sharing
+
 # Laporan Proyek Machine Learning - Klasifikasi Emosi
 # Domain Proyek
 Di era digital 2025, pemahaman emosi manusia melalui teks menjadi elemen kunci dalam aplikasi seperti kesehatan mental berbasis AI, chatbots layanan pelanggan, dan analisis sentimen di platform seperti X. Dengan melonjaknya penggunaan bahasa Indonesia di aplikasi berbasis teks, sistem otomatis untuk mendeteksi emosi sangat diperlukan untuk memberikan respons empatik dan mendukung pengambilan keputusan berbasis data. Menurut Poria et al. (2020), analisis emosi berbasis teks dapat meningkatkan interaksi manusia-mesin dengan menangkap nuansa emosional, namun tantangan utama adalah menangani keragaman bahasa Indonesia yang kaya akan konteks budaya, seperti frasa idiomatik (“hati kecilku”) atau slang digital yang terus berkembang. Acheampong et al. (2021) menyoroti bahwa deteksi emosi berbasis teks menghadapi kendala dalam menangani bahasa non-Inggris, termasuk bahasa Indonesia, yang membutuhkan model dengan kemampuan generalisasi tinggi untuk menangkap variasi linguistik lokal.
