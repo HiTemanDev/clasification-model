@@ -239,6 +239,18 @@ Bagian ini mengevaluasi performa model DistilBERT Murni dan Model Hybrid pada da
 - Model hybrid lebih efisien untuk inferensi cepat, sementara TFLite mendukung deployment mobile.  
 - Kedua model menangani teks dengan konteks budaya lokal dengan baik.
 
+# Deployment dengan Docker
+
+Untuk mendukung skalabilitas dan kemudahan deployment, model klasifikasi emosi  telah dikemas ke dalam Docker container. Berikut adalah langkah-langkah yang telah dilakukan:
+
+- **Pembuatan Dockerfile**: Dibuat Dockerfile yang mencakup dependensi seperti PyTorch, Transformers, scikit-learn, dan MLflow untuk mendukung inferensi model.
+- **Penyimpanan Model dan Artifacts**: Model DistilBERT, Logistic Regression, TF-IDF vectorizer, tokenizer, dan file TFLite telah disimpan dalam container bersama dengan MLflow artifacts.
+- **Testing Container**: Docker image telah diuji secara lokal untuk memastikan model dapat memproses input teks dan menghasilkan prediksi dengan akurasi konsisten (97% untuk model hybrid).
+- **Image Docker**: Image Docker disimpan di dalam google drive serta dalam docker hub
+
+Contoh perintah untuk menjalankan container:
+```bash
+docker run -p 5000:5000 emotion-classifier:latest
 # Kesimpulan Keseluruhan
 - Performa: Model hybrid mencapai akurasi 97% dan F1-score 0.97, sedikit mengungguli DistilBERT murni (96%, F1-score 0.96). Kedua model efektif untuk klasifikasi emosi, dengan hybrid lebih stabil pada kelas happy dan stress.  
 - Penanganan Konteks Lokal: Kedua model berhasil menangkap frasa budaya, memenuhi tujuan menangani bahasa Indonesia.  
